@@ -1,0 +1,39 @@
+.img-box{
+	column-count: 4;
+	column-gap: 5px;
+	max-width: 90%;
+	margin: auto;
+}
+.image{
+	max-width: 100%;
+	display: block;
+    filter: brightness(1.0);
+    transition: 1s;
+}
+.image:hover{
+	filter: brightness(1.5);
+}
+.image+.image{
+	margin: 5px;
+
+}
+h1{
+	width: 100%;
+	text-align: center;
+	border: 5px solid black;
+	color: black;
+
+
+}
+body{
+	background-color: red;
+}
+p{
+	font-size: 60PX;
+	text-align: center;
+}
+@media all and (max-width:600px){
+	.img-box{
+		column-count: 2;
+	}
+}
